@@ -1,0 +1,20 @@
+name: Create GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  create_pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: docker build -t generator .
+      - run: docker run -v $PWD/docs:/repo/docs generator
+      - run: |
+         git config --global user.name 'Bot'
+         git config --global user.email 'atorrescogollo@gmail.com'
+         git add docs/ && git commit -m "Autodoc"
+         git push
