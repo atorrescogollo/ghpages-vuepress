@@ -1,0 +1,9 @@
+{
+  "name": "ghpages-vuepress",
+  "version": "0.1.0",
+  "description": "Github Pages VuePress Template",
+  "main": "index.js",
+  "repository": "https://github.com/atorrescogollo/ghpages-vuepress",
+  "author": "Álvaro Torres Cogollo",
+  "license": "GPL-3.0"
+}
