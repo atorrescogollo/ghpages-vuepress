@@ -1,4 +1,5 @@
-work/
 node_modules/
 *.lock
 *.log
+package-lock.json
+.eslintrc*
