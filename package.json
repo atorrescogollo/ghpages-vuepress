@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "https://github.com/atorrescogollo/ghpages-vuepress",
   "author": "Álvaro Torres Cogollo",
-  "license": "GPL-3.0"
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "vuepress": "^1.7.1"
+  }
 }
