@@ -8,5 +8,9 @@
   "license": "GPL-3.0",
   "devDependencies": {
     "vuepress": "^1.7.1"
+  },
+  "scripts": {
+    "src:dev": "vuepress dev src",
+    "src:build": "vuepress build src"
   }
 }
