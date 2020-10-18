@@ -1,6 +1,8 @@
+
 module.exports = {
     title: "Github Pages con VuePress",
     description: "Pruebas para generar tus GitHub Pages",
+    base: process.env.VUEPRESS_BASE || '/',
     themeConfig: {
         "logo": "/assets/img/logo.png",
         "nav": [
