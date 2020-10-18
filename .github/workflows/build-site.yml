@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: docker build -t generator .
-      - run: echo ::set-env name=REPOSITORY_NAME::$(echo "$GITHUB_REPOSITORY" | awk -F / '{print $2}')
+      - run: echo >>$GITHUB_ENV REPOSITORY_NAME=$(echo "$GITHUB_REPOSITORY" | awk -F / '{print $2}')
       - run: |
          docker run -v $PWD/docs:/repo/docs -e VUEPRESS_BASE="/${REPOSITORY_NAME}/" generator
       - run: |
