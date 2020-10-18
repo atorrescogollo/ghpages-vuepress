@@ -5,9 +5,10 @@ module.exports = {
         logo: '/assets/img/logo.png',
         nav: [
             {text: "Home", link: '/'},
-            {text: "Subweb1", link: '/subweb1/'},
-            {text: "Github", link: 'https://github.com/atorrescogollo'},
-            {text: "Contacto", link: 'contact'}
-        ]
+            {text: "Proyectos", link: '/#proyectos'},
+            {text: "Contacto", link: '/contact'},
+            {text: "Github", link: 'https://github.com/atorrescogollo'}
+        ],
+        sidebar: []
     }
 }
